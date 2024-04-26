@@ -1,0 +1,309 @@
+{
+  "activities": [
+    {
+      "id": "1",
+      "title": "Beach Cleanup Initiative",
+      "img": "https://blogs.nasa.gov/kennedy/wp-content/uploads/sites/246/2017/04/KSC-20170412-PH_SWW01_0014.jpg",
+      "description": "Join us for a day of cleaning up our beautiful beaches.",
+      "content": "Join us for a day of cleaning up our beautiful beaches. We will provide gloves, bags, and other necessary equipment. Let's work together to protect our environment!",
+      "date": "15 May 2024",
+      "start_time": "10:00 AM",
+      "duration": "4 hours",
+      "location": "Split",
+      "association": "Coastal Guardians",
+      "coordinates": {
+        "latitude": 43.5081,
+        "longitude": 16.4402
+      },
+      "volunteers": [
+        {
+          "name": "Karlo Živković",
+          "img": "https://randomuser.me/api/portraits/men/75.jpg",
+          "city": "Split, Croatia",
+          "email": "karlo.zivkovic2@gmail.com",
+          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+        },
+        {
+          "name": "Karlo Živković",
+          "img": "https://randomuser.me/api/portraits/men/75.jpg",
+          "city": "Split, Croatia",
+          "email": "karlo.zivkovic2@gmail.com",
+          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+        },
+        {
+          "name": "Karlo Živković",
+          "img": "https://randomuser.me/api/portraits/men/75.jpg",
+          "city": "Split, Croatia",
+          "email": "karlo.zivkovic2@gmail.com",
+          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+        },
+        {
+          "name": "Karlo Živković",
+          "img": "https://randomuser.me/api/portraits/men/75.jpg",
+          "city": "Split, Croatia",
+          "email": "karlo.zivkovic2@gmail.com",
+          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+        },
+        {
+          "name": "Karlo Živković",
+          "img": "https://randomuser.me/api/portraits/men/75.jpg",
+          "city": "Split, Croatia",
+          "email": "karlo.zivkovic2@gmail.com",
+          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+        },
+        {
+          "name": "Karlo Živković",
+          "img": "https://randomuser.me/api/portraits/men/75.jpg",
+          "city": "Split, Croatia",
+          "email": "karlo.zivkovic2@gmail.com",
+          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+        },
+        {
+          "name": "Karlo Živković",
+          "img": "https://randomuser.me/api/portraits/men/75.jpg",
+          "city": "Split, Croatia",
+          "email": "karlo.zivkovic2@gmail.com",
+          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+        },
+        {
+          "name": "Karlo Živković",
+          "img": "https://randomuser.me/api/portraits/men/75.jpg",
+          "city": "Split, Croatia",
+          "email": "karlo.zivkovic2@gmail.com",
+          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Community Garden Planting",
+      "img": "https://eloisestevens.blogs.bucknell.edu/files/2021/11/2021-11-30-15_00_29-Lewisburg-Community-Garden-@lewisburgcommunitygarden-%E2%80%A2-Instagram-photos-and-vi.png",
+      "description": "Help us plant flowers and vegetables in our local community garden.",
+      "content": "Help us plant flowers and vegetables in our local community garden. No gardening experience necessary! Come join us for a fun day outdoors and contribute to beautifying our neighborhood.",
+      "date": "22 May 2024",
+      "start_time": "9:00 AM",
+      "duration": "3 hours",
+      "location": "Trogir",
+      "association": "Green Thumb Society",
+      "coordinates": {
+        "latitude": 43.517209,
+        "longitude": 16.249137
+      },
+      "volunteers": []
+    },
+    {
+      "id": "3",
+      "title": "Children's Art Workshop",
+      "img": "https://akronkids.org/sites/default/files/resize/images/volunteer-at-akron-childrens-museum-562x316.jpg",
+      "description": "Volunteers needed to assist with art activities for children ages 5-12.",
+      "content": "Volunteers needed to assist with art activities for children ages 5-12. We'll be painting, drawing, and doing fun crafts. Join us in sparking creativity in young minds!",
+      "date": "5 June 2024",
+      "start_time": "1:00 PM",
+      "duration": "2.5 hours",
+      "location": "Podstrana",
+      "association": "Young Artisans",
+      "coordinates": {
+        "latitude": 43.486822,
+        "longitude": 16.549414
+      },
+      "volunteers": []
+    },
+    {
+      "id": "4",
+      "title": "Elderly Care Assistance",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFJv-GXLLNU6jRtTFX5t9ewmt0XFTh37JI3A&s",
+      "description": "Provide companionship and assistance to elderly residents in nursing homes.",
+      "content": "Provide companionship and assistance to elderly residents in nursing homes. Help with activities, read to them, or simply spend time chatting. Your presence will brighten their day!",
+      "date": "12 June 2024",
+      "start_time": "11:00 AM",
+      "duration": "3 hours",
+      "location": "Hvar",
+      "association": "Elderly Care Alliance",
+      "coordinates": {
+        "latitude": 43.171654,
+        "longitude": 16.441758
+      },
+      "volunteers": []
+    },
+    {
+      "id": "5",
+      "title": "Food Drive Distribution",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIO_raXo5UWbGfQ5dWFca_GbYp12aHhxpYQQ&s",
+      "description": "Assist with distributing food items to families in need.",
+      "content": "Assist with distributing food items to families in need. We'll be organizing and distributing food packages to those facing food insecurity. Every helping hand makes a difference!",
+      "date": "19 June 2024",
+      "start_time": "2:00 PM",
+      "duration": "4 hours",
+      "location": "Split",
+      "association": "Food Aid Foundation",
+      "coordinates": {
+        "latitude": 43.5081,
+        "longitude": 16.4402
+      },
+      "volunteers": []
+    },
+    {
+      "id": "652a",
+      "title": "dwad",
+      "img": "awd",
+      "description": "awd",
+      "content": "adw",
+      "date": "22 Apr 2024",
+      "start_time": "12:00 AM",
+      "duration": 1,
+      "location": "wda",
+      "association": "adw",
+      "volunteers": []
+    },
+    {
+      "id": "b47a",
+      "title": "dwad",
+      "img": "awd",
+      "description": "awd",
+      "content": "adw",
+      "date": "22 Apr 2024",
+      "start_time": "12:00 AM",
+      "duration": 1,
+      "location": "wda",
+      "association": "adw",
+      "volunteers": []
+    },
+    {
+      "id": "53e5",
+      "title": "dwad",
+      "img": "awd",
+      "description": "awd",
+      "content": "adw",
+      "date": "22 Apr 2024",
+      "start_time": "12:00 AM",
+      "duration": 1,
+      "location": "Split",
+      "association": "adw",
+      "volunteers": []
+    },
+    {
+      "id": "e54b",
+      "title": "adwa",
+      "img": "daw",
+      "description": "adw",
+      "content": "adw",
+      "date": "22 Apr 2024",
+      "start_time": "12:00 AM",
+      "duration": 3,
+      "location": "Split, Croatia",
+      "association": "dawd",
+      "volunteers": []
+    },
+    {
+      "id": "64b9",
+      "title": "sadas",
+      "img": "dawda",
+      "description": "awda",
+      "content": "adw",
+      "date": "22 Apr 2024",
+      "start_time": "12:00 AM",
+      "duration": 1,
+      "location": "adw",
+      "association": "awd",
+      "volunteers": []
+    }
+  ],
+  "volunteers": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "img": "https://randomuser.me/api/portraits/men/14.jpg",
+      "city": "Split",
+      "email": "example@gmail.com",
+      "type": [
+        "ecology",
+        "education",
+        "transport"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Anna Harris",
+      "img": "https://randomuser.me/api/portraits/women/3.jpg",
+      "city": "Trogir",
+      "email": "example@gmail.com",
+      "type": [
+        "transport"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Anna Harris",
+      "img": "https://randomuser.me/api/portraits/women/3.jpg",
+      "city": "Trogir",
+      "email": "example@gmail.com",
+      "type": [
+        "education"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Anna Harris",
+      "img": "https://randomuser.me/api/portraits/women/3.jpg",
+      "city": "Trogir",
+      "email": "example@gmail.com",
+      "type": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Anna Harris",
+      "img": "https://randomuser.me/api/portraits/women/3.jpg",
+      "city": "Trogir",
+      "email": "example@gmail.com",
+      "type": [
+        "ecology",
+        "education"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Anna Harris",
+      "img": "https://randomuser.me/api/portraits/women/3.jpg",
+      "city": "Trogir",
+      "email": "example@gmail.com",
+      "type": [
+        "ecology",
+        "education"
+      ]
+    }
+  ],
+  "associations": [
+    {
+      "id": "1",
+      "name": "Coastal Guardians",
+      "address": "Vukovarska ul. 142-144, 21000, Split",
+      "city": "Split"
+    },
+    {
+      "id": "2",
+      "name": "Green Thumb Socicety",
+      "address": "Balančane 10, 21220, Trogir",
+      "city": "Trogir"
+    },
+    {
+      "id": "3",
+      "name": "Young Artisans",
+      "address": "Grljevačka ul. 35, 21312, Podstrana",
+      "city": "Podstrana"
+    },
+    {
+      "id": "4",
+      "name": "Elderly Care Alliance",
+      "address": "S. Buzolić Tome 34, 21450, Hvar",
+      "city": "Hvar"
+    },
+    {
+      "id": "5",
+      "name": "Food Aid Foundation",
+      "address": "Velebitska ul. 77-61, 21000, Split",
+      "city": "Split"
+    }
+  ]
+}
