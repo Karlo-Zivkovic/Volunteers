@@ -1,41 +1,52 @@
 import { useEffect, useState } from "react";
-import { Activity } from "../../types";
+import { Activity, TypeOfActivity, Volunteer } from "../../types";
 
-export const useSortActivities = (initialActivities: Activity[]) => {
-  const [activities, setActivities] = useState<Activity[]>(initialActivities);
+export const useSortItems = (initialItems: (Volunteer | Activity)[]) => {
+  const [items, setItems] = useState(initialItems);
 
   useEffect(() => {
-    setActivities(initialActivities);
-  }, [initialActivities]);
+    setItems(initialItems);
+  }, [initialItems]);
 
-  const sortActivities = (sortOption: (string | number)[] | undefined) => {
-    if (!activities) return;
-    if (!sortOption) {
-      setActivities(initialActivities);
+  const sortItems = (sortOption: (string | number)[] | undefined) => {
+    if (!items) return;
+    if (!sortOption || sortOption[0] === "reset") {
+      setItems(initialItems);
     } else {
-      const sortOrder = sortOption[1] === "asc" ? 1 : -1;
+      const sortOrder = sortOption[2] === "asc" ? 1 : -1;
 
-      switch (sortOption[0]) {
+      switch (sortOption[1]) {
         case "date":
-          setActivities(
-            [...activities].sort(
+          setItems(
+            [...items].sort(
               (a, b) =>
                 sortOrder *
-                (new Date(a.date).getTime() - new Date(b.date).getTime()),
+                (new Date((a as Activity).date).getTime() -
+                  new Date((b as Activity).date).getTime()),
             ),
           );
           break;
         case "location":
-          setActivities(
-            [...initialActivities].filter(
-              (item) => item.location === sortOption[1],
-            ),
+          setItems(
+            [...initialItems].filter((item) => item.location === sortOption[2]),
           );
           break;
         case "numberOfVolunteers":
-          setActivities(
-            [...activities].sort(
-              (a, b) => sortOrder * (a.volunteers.length - b.volunteers.length),
+          setItems(
+            [...items].sort(
+              (a, b) =>
+                sortOrder *
+                ((a as Activity).volunteers.length -
+                  (b as Activity).volunteers.length),
+            ),
+          );
+          break;
+        case "type":
+          setItems(
+            [...initialItems].filter((item) =>
+              (item as Volunteer).type.includes(
+                sortOption[2] as TypeOfActivity,
+              ),
             ),
           );
           break;
@@ -45,5 +56,5 @@ export const useSortActivities = (initialActivities: Activity[]) => {
     }
   };
 
-  return { activities, sortActivities };
+  return { items, sortItems };
 };

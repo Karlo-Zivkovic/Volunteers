@@ -34,13 +34,13 @@
         {
           "name": "Karlo Živković",
           "img": "https://randomuser.me/api/portraits/women/11.jpg",
-          "city": "Split, Croatia",
+          "location": "Split, Croatia",
           "email": "karlo.zivkovic2@gmail.com"
         },
         {
           "name": "Karlo Živković",
           "img": "https://randomuser.me/api/portraits/women/11.jpg",
-          "city": "Split, Croatia",
+          "location": "Split, Croatia",
           "email": "karlo.zivkovic2@gmail.com"
         }
       ]
@@ -178,7 +178,7 @@
       "id": "1",
       "name": "John Doe",
       "img": "https://randomuser.me/api/portraits/men/14.jpg",
-      "city": "Split",
+      "location": "Split",
       "email": "example@gmail.com",
       "type": [
         "ecology",
@@ -190,7 +190,7 @@
       "id": "2",
       "name": "Anna Harris",
       "img": "https://randomuser.me/api/portraits/women/3.jpg",
-      "city": "Trogir",
+      "location": "Trogir",
       "email": "example@gmail.com",
       "type": [
         "transport"
@@ -200,7 +200,7 @@
       "id": "2",
       "name": "Anna Harris",
       "img": "https://randomuser.me/api/portraits/women/3.jpg",
-      "city": "Trogir",
+      "location": "Trogir",
       "email": "example@gmail.com",
       "type": [
         "education"
@@ -210,7 +210,7 @@
       "id": "2",
       "name": "Anna Harris",
       "img": "https://randomuser.me/api/portraits/women/3.jpg",
-      "city": "Trogir",
+      "location": "Trogir",
       "email": "example@gmail.com",
       "type": [
         "ecology"
@@ -220,7 +220,7 @@
       "id": "2",
       "name": "Anna Harris",
       "img": "https://randomuser.me/api/portraits/women/3.jpg",
-      "city": "Trogir",
+      "location": "Trogir",
       "email": "example@gmail.com",
       "type": [
         "ecology",
@@ -231,7 +231,7 @@
       "id": "2",
       "name": "Anna Harris",
       "img": "https://randomuser.me/api/portraits/women/3.jpg",
-      "city": "Trogir",
+      "location": "Trogir",
       "email": "example@gmail.com",
       "type": [
         "ecology",
@@ -244,31 +244,31 @@
       "id": "1",
       "name": "Coastal Guardians",
       "address": "Vukovarska ul. 142-144, 21000, Split",
-      "city": "Split"
+      "location": "Split"
     },
     {
       "id": "2",
       "name": "Green Thumb Socicety",
       "address": "Balančane 10, 21220, Trogir",
-      "city": "Trogir"
+      "location": "Trogir"
     },
     {
       "id": "3",
       "name": "Young Artisans",
       "address": "Grljevačka ul. 35, 21312, Podstrana",
-      "city": "Podstrana"
+      "location": "Podstrana"
     },
     {
       "id": "4",
       "name": "Elderly Care Alliance",
       "address": "S. Buzolić Tome 34, 21450, Hvar",
-      "city": "Hvar"
+      "location": "Hvar"
     },
     {
       "id": "5",
       "name": "Food Aid Foundation",
       "address": "Velebitska ul. 77-61, 21000, Split",
-      "city": "Split"
+      "location": "Split"
     }
   ]
 }

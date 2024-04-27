@@ -14,7 +14,7 @@ const formItemLayout = {
 };
 
 type FormType = {
-  city: string;
+  location: string;
   name: string;
   email: string;
   image: string;
@@ -24,7 +24,7 @@ interface AddUserFormProps {
   handleOk: () => void;
   id: string;
   volunteers?:
-    | { name: string; img: string; city: string; email: string }[]
+    | { name: string; img: string; location: string; email: string }[]
     | undefined;
 }
 
@@ -79,9 +79,9 @@ export default function AddUserForm({
       </Form.Item>
 
       <Form.Item
-        label="City"
-        name="city"
-        rules={[{ required: true, message: "Please input the city!" }]}
+        label="Location"
+        name="location"
+        rules={[{ required: true, message: "Please input the location!" }]}
       >
         <Input />
       </Form.Item>

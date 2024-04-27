@@ -6,14 +6,14 @@ interface AddUser_AddActivity_ModalProps {
   modalTitle: string;
   id?: string;
   volunteers?:
-    | { name: string; img: string; city: string; email: string }[]
+    | { name: string; img: string; location: string; email: string }[]
     | undefined;
   fetch: () => Promise<void>;
   FormComponent: React.ComponentType<{
     handleOk: () => void;
     id: string;
     volunteers?:
-      | { name: string; img: string; city: string; email: string }[]
+      | { name: string; img: string; location: string; email: string }[]
       | undefined;
   }>;
 }

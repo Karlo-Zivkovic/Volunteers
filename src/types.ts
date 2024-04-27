@@ -14,27 +14,39 @@ export type Activity = {
   content: string;
   date: string;
   location: string;
-  volunteers: {id:string, name: string; img: string; city: string; email: string }[];
+  volunteers: {
+    id: string;
+    name: string;
+    img: string;
+    location: string;
+    email: string;
+  }[];
 };
 export type Volunteer = {
   id: string;
   name: string;
   img: string;
-  city: string;
+  location: string;
   email: string;
   type: TypeOfActivity[];
 };
+
+export enum TypeOfActivity {
+  ecology = "ecology",
+  education = "education",
+  transport = "transport",
+  diverse = "diverse"
+}
 
 export type Association = {
   id: string;
   name: string;
   address: string;
-  city: string;
+  location: string;
 };
 
-enum TypeOfActivity {
-  Ecology = "ecology",
-  Education = "education",
-  Transport = "transport",
-  Any = "any",
-}
+export type SortOptions = {
+  value: string;
+  label: string;
+  children?: SortOptions[];
+};

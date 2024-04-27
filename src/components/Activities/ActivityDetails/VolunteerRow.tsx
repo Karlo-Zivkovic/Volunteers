@@ -8,7 +8,7 @@ interface VolunteerRowProps {
     id: string;
     name: string;
     email: string;
-    city: string;
+    location: string;
     img: string;
   };
   activity: Activity;

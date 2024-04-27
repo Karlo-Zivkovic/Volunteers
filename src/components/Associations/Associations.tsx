@@ -12,9 +12,9 @@ const columns: TableProps<Association>["columns"] = [
     render: (text) => <p className="py-6 text-2xl text-slate-700">{text}</p>,
   },
   {
-    title: <p className="text-xl text-slate-700">City</p>,
-    dataIndex: "city",
-    key: "city",
+    title: <p className="text-xl text-slate-700">Location</p>,
+    dataIndex: "location",
+    key: "location",
     render: (text) => <p className="py-6 text-xl text-slate-700">{text}</p>,
   },
   {

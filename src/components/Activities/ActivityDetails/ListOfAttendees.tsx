@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 interface ListOfAttendeesProps {
   volunteers:
-    | { name: string; img: string; city: string; email: string }[]
+    | { name: string; img: string; location: string; email: string }[]
     | undefined;
 }
 
