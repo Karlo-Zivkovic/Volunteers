@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FaCalendarDays } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useAppContext } from "../../context";
-import { useSortItems } from "./useSortActivities";
+import { useSortItems } from "./useSortItems";
 import { Activity } from "../../types";
 import axios from "axios";
 import AddUser_AddActivity_Modal from "./AddUser_AddActivity_Modal";

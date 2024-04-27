@@ -8,7 +8,7 @@ import { HiSpeakerphone } from "react-icons/hi";
 import { Volunteer } from "../../types";
 import SortBy from "../Activities/SortBy";
 import { getCities, getVolunteersSortOptions } from "../../utils";
-import { useSortItems } from "../Activities/useSortActivities";
+import { useSortItems } from "../Activities/useSortItems";
 
 export default function Volunteers() {
   const [initialVolunteers, setInitialVolunteers] = useState<Volunteer[] | []>(
