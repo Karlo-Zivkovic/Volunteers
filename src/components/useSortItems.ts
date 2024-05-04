@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import { Activity, TypeOfActivity, Volunteer } from "../../types";
+import { Activity, Association, TypeOfActivity, Volunteer } from "../types";
+import { calculateAverageRating } from "../utils";
 
-export const useSortItems = (initialItems: (Volunteer | Activity)[]) => {
+export const useSortItems = (
+  initialItems: (Volunteer | Activity | Association)[],
+) => {
   const [items, setItems] = useState(initialItems);
 
   useEffect(() => {
@@ -50,6 +53,26 @@ export const useSortItems = (initialItems: (Volunteer | Activity)[]) => {
             ),
           );
           break;
+        case "numberOfRatings":
+          setItems(
+            [...items].sort(
+              (a, b) =>
+                sortOrder *
+                ((a as Volunteer).ratings.length -
+                  (b as Volunteer).ratings.length),
+            ),
+          );
+          break;
+        case "bestRated":
+          setItems(
+            [...items].sort((a, b) => {
+              const avgRatingA = calculateAverageRating(a as Volunteer);
+              const avgRatingB = calculateAverageRating(b as Volunteer);
+              return sortOrder * (avgRatingA - avgRatingB);
+            }),
+          );
+          break;
+
         default:
           break;
       }

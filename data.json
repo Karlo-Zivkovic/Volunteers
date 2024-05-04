@@ -1,277 +1,279 @@
 {
   "activities": [
     {
-      "id": "1",
-      "title": "Beach Cleanup Initiative",
+      "title": "Beach Cleanup",
       "img": "https://blogs.nasa.gov/kennedy/wp-content/uploads/sites/246/2017/04/KSC-20170412-PH_SWW01_0014.jpg",
-      "description": "Join us for a day of cleaning up our beautiful beaches.",
-      "content": "Join us for a day of cleaning up our beautiful beaches. We will provide gloves, bags, and other necessary equipment. Let's work together to protect our environment!",
-      "date": "15 May 2024",
-      "start_time": "10:00 AM",
-      "duration": "4 hours",
+      "description": "Join us for a community beach cleanup event! Let's work together to keep our beaches clean and protect marine life.",
+      "content": "We will provide gloves and trash bags. Please wear comfortable clothing and closed-toe shoes.",
+      "duration": 2,
+      "date": "2024-05-30T22:00:00.000Z",
+      "start_time": "2024-05-03T22:00:00.000Z",
       "location": "Split",
       "association": "Coastal Guardians",
-      "coordinates": {
-        "latitude": 43.5081,
-        "longitude": 16.4402
-      },
       "volunteers": [
         {
-          "name": "Karlo Živković",
-          "img": "https://randomuser.me/api/portraits/men/75.jpg",
-          "location": "Split, Croatia",
-          "email": "karlo.zivkovic2@gmail.com",
-          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+          "name": "Arlie Joseph",
+          "img": "https://randomuser.me/api/portraits/men/12.jpg",
+          "email": "arlie.joseph@gmail.com",
+          "id": "674d126c-2b10-41c9-b74c-4dd939025b99"
         },
         {
-          "name": "Karlo Živković",
-          "img": "https://randomuser.me/api/portraits/men/75.jpg",
-          "location": "Split, Croatia",
-          "email": "karlo.zivkovic2@gmail.com",
-          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+          "name": "Filiberto Elliott",
+          "img": "https://randomuser.me/api/portraits/men/79.jpg",
+          "email": "filiberto.elliott@gmail.com",
+          "id": "c9751b47-9fb3-4ee6-9c1d-cfb57d3c2c96"
         },
         {
-          "name": "Karlo Živković",
-          "img": "https://randomuser.me/api/portraits/men/75.jpg",
-          "location": "Split, Croatia",
-          "email": "karlo.zivkovic2@gmail.com",
-          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
-        },
+          "name": "Kerry Li",
+          "img": "https://randomuser.me/api/portraits/men/92.jpg",
+          "email": "kerry.li@gmail.com",
+          "id": "590871d1-a5d4-4b4d-879d-a333ace41334"
+        }
+      ],
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "title": "Community Garden Planting",
+      "img": "data:image/jpeg;base64,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",
+      "description": "Help us plant new crops and maintain our community garden! Everyone is welcome to join.",
+      "content": "No experience necessary. We'll provide all the tools and guidance you need.",
+      "date": "2024-05-29T22:00:00.000Z",
+      "start_time": "2024-05-04T07:00:00.000Z",
+      "duration": 3,
+      "location": "Split",
+      "association": "Green Thumb Society",
+      "volunteers": [
         {
-          "name": "Karlo Živković",
-          "img": "https://randomuser.me/api/portraits/men/75.jpg",
-          "location": "Split, Croatia",
-          "email": "karlo.zivkovic2@gmail.com",
-          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
-        },
-        {
-          "name": "Karlo Živković",
-          "img": "https://randomuser.me/api/portraits/men/75.jpg",
-          "location": "Split, Croatia",
-          "email": "karlo.zivkovic2@gmail.com",
-          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
-        },
-        {
-          "name": "Karlo Živković",
-          "img": "https://randomuser.me/api/portraits/men/75.jpg",
-          "location": "Split, Croatia",
-          "email": "karlo.zivkovic2@gmail.com",
-          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
-        },
-        {
-          "name": "Karlo Živković",
-          "img": "https://randomuser.me/api/portraits/men/75.jpg",
-          "location": "Split, Croatia",
-          "email": "karlo.zivkovic2@gmail.com",
-          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
-        },
-        {
-          "name": "Karlo Živković",
-          "img": "https://randomuser.me/api/portraits/men/75.jpg",
-          "location": "Split, Croatia",
-          "email": "karlo.zivkovic2@gmail.com",
-          "id": "3e226e8c-9188-4116-a38f-4d8ccc49164b"
+          "name": "Jami Gillespie",
+          "img": "https://randomuser.me/api/portraits/women/0.jpg",
+          "email": "jami.gillespie@gmail.com",
+          "id": "02734c6f-1167-4f45-8447-bc34f348466d"
         }
       ]
     },
     {
-      "id": "2",
-      "title": "Community Garden Planting",
-      "img": "https://eloisestevens.blogs.bucknell.edu/files/2021/11/2021-11-30-15_00_29-Lewisburg-Community-Garden-@lewisburgcommunitygarden-%E2%80%A2-Instagram-photos-and-vi.png",
-      "description": "Help us plant flowers and vegetables in our local community garden.",
-      "content": "Help us plant flowers and vegetables in our local community garden. No gardening experience necessary! Come join us for a fun day outdoors and contribute to beautifying our neighborhood.",
-      "date": "22 May 2024",
-      "start_time": "9:00 AM",
-      "duration": "3 hours",
-      "location": "Trogir",
-      "association": "Green Thumb Society",
-      "coordinates": {
-        "latitude": 43.517209,
-        "longitude": 16.249137
-      },
-      "volunteers": []
-    },
-    {
-      "id": "3",
-      "title": "Children's Art Workshop",
-      "img": "https://akronkids.org/sites/default/files/resize/images/volunteer-at-akron-childrens-museum-562x316.jpg",
-      "description": "Volunteers needed to assist with art activities for children ages 5-12.",
-      "content": "Volunteers needed to assist with art activities for children ages 5-12. We'll be painting, drawing, and doing fun crafts. Join us in sparking creativity in young minds!",
-      "date": "5 June 2024",
-      "start_time": "1:00 PM",
-      "duration": "2.5 hours",
-      "location": "Podstrana",
-      "association": "Young Artisans",
-      "coordinates": {
-        "latitude": 43.486822,
-        "longitude": 16.549414
-      },
-      "volunteers": []
-    },
-    {
       "id": "4",
-      "title": "Elderly Care Assistance",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFJv-GXLLNU6jRtTFX5t9ewmt0XFTh37JI3A&s",
-      "description": "Provide companionship and assistance to elderly residents in nursing homes.",
-      "content": "Provide companionship and assistance to elderly residents in nursing homes. Help with activities, read to them, or simply spend time chatting. Your presence will brighten their day!",
-      "date": "12 June 2024",
-      "start_time": "11:00 AM",
-      "duration": "3 hours",
-      "location": "Hvar",
-      "association": "Elderly Care Alliance",
-      "coordinates": {
-        "latitude": 43.171654,
-        "longitude": 16.441758
-      },
-      "volunteers": []
+      "title": "Youth Mentorship Program",
+      "img": "data:image/jpeg;base64,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",
+      "description": "Become a mentor for local youth! Share your knowledge, skills, and experiences to help shape the next generation.",
+      "content": "Training will be provided. Commitment of at least 2 hours per week required.",
+      "date": "2024-07-10T22:00:00.000Z",
+      "start_time": "2024-05-04T08:00:00.000Z",
+      "duration": 2,
+      "location": "Trogir",
+      "association": "Young Artisans",
+      "volunteers": [
+        {
+          "name": "Jana Watson",
+          "img": "https://randomuser.me/api/portraits/women/94.jpg",
+          "email": "jana.watson@gmail.com",
+          "id": "78ac21ec-6908-4ccc-a612-a5f7509889a3"
+        }
+      ]
     },
     {
       "id": "5",
+      "title": "Elderly Care Visits",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8cUIwXXKXBIy8xodkSOH0da9fwN6oFRH9w&s",
+      "description": "Join us for visits to local nursing homes and spend quality time with elderly residents. Your companionship can brighten their day!",
+      "content": "No special skills required. Just bring your kindness and compassion.",
+      "date": "2024-05-16T22:00:00.000Z",
+      "start_time": "2024-05-04T13:00:00.000Z",
+      "duration": 2,
+      "location": "Podstrana",
+      "association": "Elderly Care Alliance",
+      "volunteers": [
+        {
+          "name": "Alphonso Duarte",
+          "img": "https://randomuser.me/api/portraits/men/73.jpg",
+          "email": "alphonso.duarte@gmail.com",
+          "id": "14d817b3-e10f-4b75-8163-afca03bc51a6"
+        }
+      ]
+    },
+    {
+      "id": "6",
       "title": "Food Drive Distribution",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIO_raXo5UWbGfQ5dWFca_GbYp12aHhxpYQQ&s",
-      "description": "Assist with distributing food items to families in need.",
-      "content": "Assist with distributing food items to families in need. We'll be organizing and distributing food packages to those facing food insecurity. Every helping hand makes a difference!",
-      "date": "19 June 2024",
-      "start_time": "2:00 PM",
-      "duration": "4 hours",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShhuQGtXVKI2nQ0dvRUBAR2nM9dp4p7XkLTQ&s",
+      "description": "Help us distribute food to families in need. Your support can make a big difference in someone's life!",
+      "content": "Volunteers will assist in packing and distributing food packages.",
+      "date": "2024-06-13T22:00:00.000Z",
+      "start_time": "2024-05-04T16:00:00.000Z",
+      "duration": 4,
       "location": "Split",
       "association": "Food Aid Foundation",
-      "coordinates": {
-        "latitude": 43.5081,
-        "longitude": 16.4402
-      },
-      "volunteers": []
+      "volunteers": [
+        {
+          "name": "Ethan Mejia",
+          "img": "https://randomuser.me/api/portraits/men/28.jpg",
+          "email": "ethan.mejia@gmail.com",
+          "id": "84d8c189-5166-472b-942a-d734d5db85a5"
+        }
+      ]
     },
     {
-      "id": "652a",
-      "title": "dwad",
-      "img": "awd",
-      "description": "awd",
-      "content": "adw",
-      "date": "22 Apr 2024",
-      "start_time": "12:00 AM",
-      "duration": 1,
-      "location": "wda",
-      "association": "adw",
-      "volunteers": []
-    },
-    {
-      "id": "b47a",
-      "title": "dwad",
-      "img": "awd",
-      "description": "awd",
-      "content": "adw",
-      "date": "22 Apr 2024",
-      "start_time": "12:00 AM",
-      "duration": 1,
-      "location": "wda",
-      "association": "adw",
-      "volunteers": []
-    },
-    {
-      "id": "53e5",
-      "title": "dwad",
-      "img": "awd",
-      "description": "awd",
-      "content": "adw",
-      "date": "22 Apr 2024",
-      "start_time": "12:00 AM",
-      "duration": 1,
-      "location": "Split",
-      "association": "adw",
-      "volunteers": []
-    },
-    {
-      "id": "e54b",
-      "title": "adwa",
-      "img": "daw",
-      "description": "adw",
-      "content": "adw",
-      "date": "22 Apr 2024",
-      "start_time": "12:00 AM",
-      "duration": 3,
-      "location": "Split, Croatia",
-      "association": "dawd",
-      "volunteers": []
-    },
-    {
-      "id": "64b9",
-      "title": "sadas",
-      "img": "dawda",
-      "description": "awda",
-      "content": "adw",
-      "date": "22 Apr 2024",
-      "start_time": "12:00 AM",
-      "duration": 1,
-      "location": "adw",
-      "association": "awd",
-      "volunteers": []
+      "id": "7",
+      "title": "Art Workshop for Kids",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xPadRUShiUNIvLrZn9qBJ3fxDskL1kGkRQ&s",
+      "description": "Join us for a fun and creative art workshop for kids! Let's explore our artistic talents together.",
+      "content": "Materials will be provided. No prior art experience necessary.",
+      "date": "2024-07-10T22:00:00.000Z",
+      "start_time": "2024-05-04T14:04:00.000Z",
+      "duration": 2,
+      "location": "Makarska",
+      "association": "Artistic Expressions",
+      "volunteers": [
+        {
+          "name": "Colette Marshall",
+          "img": "https://randomuser.me/api/portraits/women/4.jpg",
+          "email": "colette.marshall@gmail.com",
+          "id": "f243a299-6c3e-4017-87cb-3aa6be57a668"
+        },
+        {
+          "name": "Carly Simon",
+          "img": "https://randomuser.me/api/portraits/women/91.jpg",
+          "email": "carly.simon@gmail.com",
+          "id": "3125ab76-a5d0-4d78-9d0d-964e301214da"
+        }
+      ]
     }
   ],
   "volunteers": [
     {
-      "id": "1",
       "name": "John Doe",
       "img": "https://randomuser.me/api/portraits/men/14.jpg",
       "location": "Split",
       "email": "example@gmail.com",
+      "ratings": [
+        1,
+        5,
+        4,
+        5,
+        5,
+        4,
+        3,
+        3
+      ],
+      "reviews": [],
       "type": [
-        "ecology",
-        "education",
+        "diverse",
         "transport"
-      ]
+      ],
+      "id": "1"
     },
     {
-      "id": "2",
-      "name": "Anna Harris",
-      "img": "https://randomuser.me/api/portraits/women/3.jpg",
+      "name": "Jane Doe",
+      "img": "https://randomuser.me/api/portraits/women/44.jpg",
       "location": "Trogir",
-      "email": "example@gmail.com",
+      "email": "janedoe@gmail.com",
+      "ratings": [
+        3,
+        4,
+        2,
+        5,
+        4,
+        5,
+        5,
+        5,
+        5,
+        4,
+        3
+      ],
+      "reviews": [
+        "Jane was very punctual and dedicated to her work.",
+        "She was extremely helpful and friendly.",
+        "I highly recommend Jane for any volunteering opportunities.",
+        "Jane's positive attitude made the volunteering experience enjoyable.",
+        "She went above and beyond to assist with the tasks."
+      ],
       "type": [
-        "transport"
-      ]
+        "transport",
+        "education"
+      ],
+      "id": "2"
     },
     {
-      "id": "2",
-      "name": "Anna Harris",
-      "img": "https://randomuser.me/api/portraits/women/3.jpg",
+      "name": "Alice Smith",
+      "img": "https://randomuser.me/api/portraits/women/25.jpg",
       "location": "Solin",
-      "email": "example@gmail.com",
+      "email": "alice.smith@gmail.com",
+      "ratings": [
+        3,
+        5,
+        4
+      ],
+      "reviews": [
+        "Alice is an exceptional volunteer with great dedication.",
+        "She effectively communicated with the team and contributed positively.",
+        "I'm impressed by Alice's professionalism and commitment.",
+        "Alice demonstrated strong leadership skills throughout the volunteering period.",
+        "It was a pleasure working with Alice, and I look forward to future collaborations."
+      ],
       "type": [
-        "education"
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Anna Harris",
-      "img": "https://randomuser.me/api/portraits/women/3.jpg",
-      "location": "Trogir",
-      "email": "example@gmail.com",
-      "type": [
+        "diverse",
+        "education",
         "ecology"
-      ]
+      ],
+      "id": "3"
     },
     {
-      "id": "2",
-      "name": "Anna Harris",
-      "img": "https://randomuser.me/api/portraits/women/3.jpg",
-      "location": "Trogir",
-      "email": "example@gmail.com",
+      "name": "Mark Johnson",
+      "img": "https://randomuser.me/api/portraits/men/81.jpg",
+      "location": "Makarska",
+      "email": "mark.johnson@gmail.com",
+      "ratings": [
+        4,
+        2,
+        3,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "reviews": [
+        "Mark demonstrated excellent problem-solving skills during the volunteering event.",
+        "His dedication and enthusiasm were inspiring to everyone."
+      ],
       "type": [
-        "ecology",
-        "education"
-      ]
+        "transport",
+        "ecology"
+      ],
+      "id": "4"
     },
     {
-      "id": "2",
-      "name": "Anna Harris",
-      "img": "https://randomuser.me/api/portraits/women/3.jpg",
-      "location": "Trogir",
-      "email": "example@gmail.com",
+      "name": "Emily Wilson",
+      "img": "https://randomuser.me/api/portraits/women/87.jpg",
+      "location": "Hvar",
+      "email": "emilywilson@gmail.com",
+      "ratings": [
+        5,
+        1,
+        3,
+        4,
+        5,
+        5,
+        5,
+        3,
+        5,
+        3
+      ],
+      "reviews": [
+        "Emily's dedication to the cause was commendable.",
+        "She displayed exceptional organizational skills and attention to detail.",
+        "Emily's positive energy uplifted the team and kept morale high.",
+        "She effectively managed multiple tasks simultaneously.",
+        "It was a pleasure to work with Emily, and I would gladly collaborate again."
+      ],
       "type": [
-        "ecology",
-        "education"
-      ]
+        "diverse",
+        "education",
+        "ecology"
+      ],
+      "id": "5"
     }
   ],
   "associations": [
@@ -279,31 +281,99 @@
       "id": "1",
       "name": "Coastal Guardians",
       "address": "Vukovarska ul. 142-144, 21000, Split",
-      "location": "Split"
+      "location": "Split",
+      "email": "coastalguardians@gmail.com",
+      "type": [
+        "ecology",
+        "transport"
+      ]
     },
     {
       "id": "2",
-      "name": "Green Thumb Socicety",
+      "name": "Green Thumb Society",
       "address": "Balančane 10, 21220, Trogir",
-      "location": "Trogir"
+      "location": "Trogir",
+      "email": "greenthumbsociety@gmail.com",
+      "type": [
+        "education",
+        "diverse"
+      ]
     },
     {
       "id": "3",
       "name": "Young Artisans",
-      "address": "Grljevačka ul. 35, 21312, Podstrana",
-      "location": "Podstrana"
+      "address": "Grljevačka ul. 35, 21312, Solin",
+      "location": "Solin",
+      "email": "youngartisans@gmail.com",
+      "type": [
+        "education",
+        "diverse"
+      ]
     },
     {
       "id": "4",
       "name": "Elderly Care Alliance",
       "address": "S. Buzolić Tome 34, 21450, Hvar",
-      "location": "Hvar"
+      "location": "Hvar",
+      "email": "elderlycarealliance@gmail.com",
+      "type": [
+        "transport"
+      ]
     },
     {
       "id": "5",
       "name": "Food Aid Foundation",
-      "address": "Velebitska ul. 77-61, 21000, Split",
-      "location": "Split"
+      "address": "Velebitska ul. 77-61, 21000, Podstrana",
+      "location": "Podstrana",
+      "email": "foodaidfoundation@gmail.com",
+      "type": [
+        "ecology",
+        "education"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Artistic Expressions",
+      "address": "Some Address in Split",
+      "location": "Split",
+      "email": "artisticexpressions@gmail.com",
+      "type": [
+        "diverse"
+      ]
+    },
+    {
+      "id": "16bd",
+      "name": "Green Earth Society",
+      "address": "Hrvatske Mornarice, Split",
+      "location": "Split",
+      "email": "greenearthsociety@gmail.com",
+      "type": [
+        "education",
+        "transport"
+      ]
+    }
+  ],
+  "requestedAssociations": [
+    {
+      "id": "ce12",
+      "name": "Tech For All",
+      "address": "Tech Park, Makarska",
+      "location": "Makarska",
+      "email": "techforall@gmail.com",
+      "type": [
+        "education"
+      ]
+    },
+    {
+      "id": "9c6f",
+      "name": "Healthcare Heroes",
+      "address": "Velebitska ul. 14, 21000, Split",
+      "location": "Split",
+      "email": "healthcareheroes@gmail.com",
+      "type": [
+        "transport",
+        "diverse"
+      ]
     }
   ]
 }

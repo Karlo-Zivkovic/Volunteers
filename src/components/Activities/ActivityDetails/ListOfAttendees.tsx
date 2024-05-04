@@ -2,9 +2,7 @@ import { Avatar } from "antd";
 import { useEffect, useState } from "react";
 
 interface ListOfAttendeesProps {
-  volunteers:
-    | { name: string; img: string; location: string; email: string }[]
-    | undefined;
+  volunteers: { name: string; img: string; email: string }[] | undefined;
 }
 
 export default function ListOfAttendees({ volunteers }: ListOfAttendeesProps) {

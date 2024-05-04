@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function Welcome() {
   return (
-    <div className="flex justify-center px-10 md:px-10 xl:px-32 h-content gap-10 py-10 sm:py-20 flex-col md:flex-row-reverse md:justify-between md:gap-4 2xl:justify-center">
+    <div className="max-w-[1400px] mx-auto flex justify-center px-10 md:px-10 xl:px-32 h-content gap-10 py-10 sm:py-20 flex-col md:flex-row-reverse md:justify-between md:gap-4 2xl:justify-center">
       <div className="xl:w-[50rem]">
         <img
           src="https://static.vecteezy.com/system/resources/previews/017/169/355/non_2x/volunteers-needed-volunteering-volunteer-organization-is-recruiting-volunteers-girl-with-a-mouthpiece-says-she-needs-volunteers-vector.jpg"
@@ -23,9 +25,9 @@ export default function Welcome() {
           simply looking to give back to society, you've come to the right
           place.
         </p>
-        <button className="bg-yellow-400 font-semibold px-7 py-4 rounded-lg text-white text-2xl hover:bg-yellow-500 transition-all mt-10">
-          Read More
-        </button>
+        <Link to='/activities' className="bg-yellow-400 font-semibold px-7 py-4 rounded-lg text-white text-2xl hover:bg-yellow-500 transition-all mt-10">
+          Find & Participate
+        </Link>
       </div>
     </div>
   );

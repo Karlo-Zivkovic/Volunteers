@@ -1,8 +1,7 @@
-import { Button, Form, Input, message } from "antd";
+import { Button, Row, Checkbox, Col, Form, Input, message } from "antd";
 import axios from "axios";
 import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
-import Loading from "../../Loading";
+import Loading from "../Loading";
 
 const formItemLayout = {
   labelCol: {
@@ -16,34 +15,26 @@ const formItemLayout = {
 };
 
 type FormType = {
+  location: string;
   name: string;
   email: string;
   image: string;
 };
 
-interface AddUserFormProps {
+interface AddVolunteerFormProps {
   handleOk: () => void;
-  id: string;
-  volunteers?: { name: string; img: string; email: string }[] | undefined;
 }
 
-export default function AddUserForm({
-  handleOk,
-  id,
-  volunteers,
-}: AddUserFormProps) {
+export default function AddVolunteerForm({ handleOk }: AddVolunteerFormProps) {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState<boolean>(false);
 
   const onFinish = async (formData: FormType) => {
-    if (!volunteers) return;
+    const volunteerData = { ...formData, ratings: [], reviews: [] };
+
     try {
       setLoading(true);
-      const volunteerId = uuidv4();
-      const newVolunteer = { ...formData, id: volunteerId };
-      await axios.patch(`http://localhost:3000/activities/${id}`, {
-        volunteers: [...volunteers, newVolunteer],
-      });
+      await axios.post("http://localhost:3000/volunteers", volunteerData);
       handleOk();
       form.resetFields();
     } catch (error) {
@@ -53,7 +44,6 @@ export default function AddUserForm({
       setLoading(false);
     }
   };
-
   return (
     <Form
       {...formItemLayout}
@@ -73,7 +63,6 @@ export default function AddUserForm({
       >
         <Input />
       </Form.Item>
-
       <Form.Item
         label="Image Url"
         name="img"
@@ -84,7 +73,16 @@ export default function AddUserForm({
       >
         <Input />
       </Form.Item>
-
+      <Form.Item
+        label="Location"
+        name="location"
+        rules={[
+          { required: true, message: "Please input the location!" },
+          { max: 30, message: "Location must be at most 30 characters long!" },
+        ]}
+      >
+        <Input />
+      </Form.Item>
       <Form.Item
         label="Email"
         name="email"
@@ -95,16 +93,48 @@ export default function AddUserForm({
       >
         <Input />
       </Form.Item>
-
+      <Form.Item
+        name="type"
+        label="Type"
+        rules={[
+          { required: true, message: "Please input the type of the activity!" },
+        ]}
+      >
+        <Checkbox.Group>
+          <Row>
+            <Col span={8}>
+              <Checkbox value="ecology" style={{ lineHeight: "32px" }}>
+                Ecology
+              </Checkbox>
+            </Col>
+            <Col span={8}>
+              <Checkbox value="education" style={{ lineHeight: "32px" }}>
+                Education
+              </Checkbox>
+            </Col>
+            <Col span={8}>
+              <Checkbox value="transport" style={{ lineHeight: "32px" }}>
+                Transport
+              </Checkbox>
+            </Col>
+            <Col span={8}>
+              <Checkbox value="diverse" style={{ lineHeight: "32px" }}>
+                Diverse
+              </Checkbox>
+            </Col>
+          </Row>
+        </Checkbox.Group>
+      </Form.Item>
       <Form.Item
         wrapperCol={{ offset: 6, span: 16 }}
         className="flex justify-end mb-0 px-10 translate-y-4"
       >
         <Button
           size="large"
-          className="font-semibold disabled:cursor-not-allowed"
           type="primary"
+          className="font-semibold disabled:cursor-not-allowed"
           htmlType="submit"
+          disabled={loading}
         >
           {loading ? <Loading size={25} color="#fff" /> : "Submit"}
         </Button>

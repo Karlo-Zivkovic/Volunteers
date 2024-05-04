@@ -8,17 +8,20 @@ import { useAppContext } from "../context";
 
 export default function Navigation() {
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState<boolean>(false);
-  const {  setIsAdmin } = useAppContext();
+  const { setIsAdmin } = useAppContext();
 
   return (
     <div className="h-[7vh] bg-gray-800 text-white flex items-center px-5">
       <div className="flex items-center h-full justify-between w-full">
-        <NavLink
-          to="/"
-          className="sm:hidden font-semibold lg:inline lg:text-xl"
-        >
-          Volunteer HQ
-        </NavLink>
+        <div className="flex gap-2 items-center">
+          <img src="/volunteer_white.svg" className="h-10 w-10 " alt="logo" />
+          <NavLink
+            to="/"
+            className="sm:hidden font-semibold lg:inline lg:text-xl"
+          >
+            Volunteer HQ
+          </NavLink>
+        </div>
         <HiOutlineViewList
           size={40}
           className="sm:hidden hover:bg-yellow-500 cursor-pointer rounded-full w-14 h-14 p-2 "

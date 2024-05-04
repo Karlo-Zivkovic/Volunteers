@@ -6,7 +6,6 @@ export type Activity = {
   id: string;
   start_time: string;
   duration: string;
-  coordinates: { latitude: string; longitude: string };
   association: string;
   title: string;
   img: string;
@@ -18,7 +17,6 @@ export type Activity = {
     id: string;
     name: string;
     img: string;
-    location: string;
     email: string;
   }[];
 };
@@ -27,6 +25,8 @@ export type Volunteer = {
   name: string;
   img: string;
   location: string;
+  ratings: number[];
+  reviews: string[];
   email: string;
   type: TypeOfActivity[];
 };
@@ -35,7 +35,7 @@ export enum TypeOfActivity {
   ecology = "ecology",
   education = "education",
   transport = "transport",
-  diverse = "diverse"
+  diverse = "diverse",
 }
 
 export type Association = {
@@ -43,6 +43,8 @@ export type Association = {
   name: string;
   address: string;
   location: string;
+  type: string[];
+  email: string;
 };
 
 export type SortOptions = {

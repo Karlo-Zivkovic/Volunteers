@@ -8,7 +8,6 @@ interface VolunteerRowProps {
     id: string;
     name: string;
     email: string;
-    location: string;
     img: string;
   };
   activity: Activity;
@@ -26,24 +25,20 @@ export default function VolunteerRow({
     try {
       const updatedVolunteers = activity.volunteers.filter(
         (volunteer) => volunteer.id !== volunteerId,
-      )
+      );
       activity.volunteers = updatedVolunteers;
-      const response = await axios.put(
+      await axios.put(
         `http://localhost:3000/activities/${activity.id}`,
         activity,
       );
-      if (response.status === 200) {
-        message.success("Volunteer successfully deleted from the event!");
-        const { data } = await axios.get(
-          `http://localhost:3000/activities/${activity.id}`,
-        );
-        setActivity(data);
-      } else {
-        message.error("Failed to delete volunteer from the event.");
-      }
-    } catch (err) {
+      message.success("Volunteer successfully deleted from the event!");
+      const { data } = await axios.get(
+        `http://localhost:3000/activities/${activity.id}`,
+      );
+      setActivity(data);
+    } catch (error) {
       message.error("An error occurred while deleting the volunteer.");
-      console.log(err);
+      console.error("Error deleting volunteer: ", error);
     }
   }
   return (

@@ -1,12 +1,12 @@
 import { Cascader } from "antd";
-import { SortOptions } from "../../types";
+import { SortOptions } from "../types";
 
-interface SortByProps {
+interface SortFilterProps {
   sortItems: (item: (string | number)[]) => void;
   options: SortOptions[];
 }
 
-export default function SortBy({ options, sortItems }: SortByProps) {
+export default function SortFilter({ options, sortItems }: SortFilterProps) {
   const onChange = (value: (string | number)[]) => {
     sortItems(value);
   };
@@ -16,7 +16,6 @@ export default function SortBy({ options, sortItems }: SortByProps) {
       options={options}
       onChange={onChange}
       placeholder="Sort/Filter"
-      // allowClear={true}
     />
   );
 }

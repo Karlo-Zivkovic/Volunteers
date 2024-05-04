@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa6";
 
 export default function Author() {
   return (
-    <div className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 py-10 bg-orange-100 px-10 md:px-10 xl:px-32">
+    <div className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 py-10 bg-orange-100 px-10 md:px-10 xl:px-32 max-w-[1400px] mx-auto">
       <div>
         <img
           src="profile_image.jpg"

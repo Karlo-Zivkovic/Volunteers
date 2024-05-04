@@ -1,16 +1,8 @@
-import {
-  Button,
-  DatePicker,
-  Form,
-  Input,
-  InputNumber,
-  TimePicker,
-  message,
-} from "antd";
+import { Button, Form, Input, message, InputNumber } from "antd";
 import axios from "axios";
-import moment from "moment";
-import { useState } from "react";
-import Loading from "../Loading";
+import { useEffect, useState } from "react";
+import { Activity } from "../../../types";
+import Loading from "../../Loading";
 
 const formItemLayout = {
   labelCol: {
@@ -28,38 +20,49 @@ type FormType = {
   img: string;
   description: string;
   content: string;
-  date: string;
-  start_time: string;
   duration: string;
   location: string;
   association: string;
-  coordinates: { latitude: string; longitude: string };
   volunteers: { name: string; email: string; img: string }[];
 };
 
-interface AddActivityFormProps {
+interface EditActivityFormProps {
   handleOk: () => void;
+  id: string;
 }
 
-export default function AddActivityForm({ handleOk }: AddActivityFormProps) {
+export default function EditActivityForm({
+  handleOk,
+  id,
+}: EditActivityFormProps) {
+  const [activity, setActivity] = useState<Activity | undefined>(undefined);
   const [form] = Form.useForm();
   const [loading, setLoading] = useState<boolean>(false);
 
-  const onFinish = async (formData: FormType) => {
-    console.log(formData);
-    const formValues = {
-      ...formData,
-      volunteers: [],
-    };
+  useEffect(() => {
+    const fetchActivity = async () => {
+      try {
+        const response = await axios.get(
+          `http://localhost:3000/activities/${id}`,
+        );
+        setActivity(response.data);
 
+        form.setFieldsValue(response.data);
+      } catch (error) {
+        console.error("Error fetching activity: ", error);
+      }
+    };
+    fetchActivity();
+  }, [id, form]);
+
+  const onFinish = async (formData: FormType) => {
     try {
       setLoading(true);
-      await axios.post(`http://localhost:3000/activities`, formValues);
+      await axios.patch(`http://localhost:3000/activities/${id}`, formData);
       handleOk();
-      form.resetFields();
     } catch (error) {
-      console.error("Error adding activity:", error);
-      message.error("Failed to add activity!");
+      console.error("Error adding activity: ", error);
+      message.error("Failed to edit the activity!");
     } finally {
       setLoading(false);
     }
@@ -67,16 +70,18 @@ export default function AddActivityForm({ handleOk }: AddActivityFormProps) {
 
   return (
     <Form
-      form={form}
       {...formItemLayout}
+      form={form}
       variant="filled"
       style={{ maxWidth: 1200 }}
       onFinish={onFinish}
       className="py-4"
+      initialValues={activity}
     >
       <Form.Item
         label="Title"
         name="title"
+        initialValue={activity?.title}
         rules={[
           { required: true, message: "Please input the title!" },
           { max: 25, message: "Title must be at most 25 characters long!" },
@@ -84,7 +89,6 @@ export default function AddActivityForm({ handleOk }: AddActivityFormProps) {
       >
         <Input />
       </Form.Item>
-
       <Form.Item
         label="Image Url"
         name="img"
@@ -95,7 +99,6 @@ export default function AddActivityForm({ handleOk }: AddActivityFormProps) {
       >
         <Input />
       </Form.Item>
-
       <Form.Item
         label="Description"
         name="description"
@@ -109,7 +112,6 @@ export default function AddActivityForm({ handleOk }: AddActivityFormProps) {
       >
         <Input />
       </Form.Item>
-
       <Form.Item
         label="Content"
         name="content"
@@ -119,29 +121,6 @@ export default function AddActivityForm({ handleOk }: AddActivityFormProps) {
         ]}
       >
         <Input.TextArea />
-      </Form.Item>
-      <Form.Item
-        label="Date"
-        name="date"
-        rules={[
-          { required: true, message: "Please input the date!" },
-          { type: "object", message: "Please select a valid date!" },
-          {
-            validator: (_, value) =>
-              value.isAfter(moment(), "day")
-                ? Promise.resolve()
-                : Promise.reject(new Error("Date must be in the future!")),
-          },
-        ]}
-      >
-        <DatePicker format={"DD MMM YYYY"} />
-      </Form.Item>
-      <Form.Item
-        label="Time"
-        name="start_time"
-        rules={[{ required: true, message: "Please input the start time!" }]}
-      >
-        <TimePicker format={"h:mm A"} />
       </Form.Item>
       <Form.Item
         label="Duration (h)"
@@ -181,7 +160,6 @@ export default function AddActivityForm({ handleOk }: AddActivityFormProps) {
       >
         <Input />
       </Form.Item>
-
       <Form.Item
         wrapperCol={{ offset: 6, span: 16 }}
         className="flex justify-end mb-0 px-10 translate-y-4"
@@ -191,7 +169,6 @@ export default function AddActivityForm({ handleOk }: AddActivityFormProps) {
           className="font-semibold disabled:cursor-not-allowed"
           type="primary"
           htmlType="submit"
-          disabled={loading}
         >
           {loading ? <Loading size={25} color="#fff" /> : "Submit"}
         </Button>

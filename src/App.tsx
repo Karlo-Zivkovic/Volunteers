@@ -15,45 +15,22 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => {
-          return <p>Loading...</p>;
-        },
         Component: Home,
       },
       {
         path: "activities",
-        loader: () => {
-          return <p>Loading...</p>;
-        },
         Component: Activities,
-        // ErrorBoundary: TodosBoundary,
-        // children: [
-        //   {
-        //     path: ":id",
-        //     loader: todoLoader,
-        //     Component: <div>something</div>,
-        //   },
-        // ],
       },
       {
         path: "activities/:id",
-        loader: () => {
-          return <p>Loading...</p>;
-        },
         Component: ActivityDetails,
       },
       {
         path: "volunteers",
-        loader: () => {
-          return <p>Loading...</p>;
-        },
         Component: Volunteers,
       },
       {
         path: "associations",
-        loader: () => {
-          return <p>Loading...</p>;
-        },
         Component: Associations,
       },
     ],
